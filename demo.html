@@ -92,6 +92,18 @@
       </core-animation-group>
 
       <core-animation id="custom-animation" duration="500">custom</core-animation>
+
+      <core-animation duration="1000" iterations="Infinity" direction="alternate">
+        infinite
+        <core-animation-keyframe>
+          <core-animation-prop name="opacity" value="1">
+          </core-animation-prop>
+        </core-animation-keyframe>
+        <core-animation-keyframe>
+          <core-animation-prop name="opacity" value="0.3">
+          </core-animation-prop>
+        </core-animation-keyframe>
+      </core-animation>
 <!--       <polymer-bounce duration="1000">bounce</polymer-bounce>
       <polymer-shake>shake</polymer-shake>
       <polymer-flip>flip X</polymer-flip>
