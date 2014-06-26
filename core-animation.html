@@ -80,7 +80,7 @@ Elements that are targets to a `core-animation` are given the `core-animation-ta
        /**
         *
         * Fired when the web animation object changes.
-        * 
+        *
         * @event core-animation-change
         */
 
@@ -143,7 +143,7 @@ Elements that are targets to a `core-animation` are given the `core-animation-ta
 
           /**
            * Controls the effect the animation has on the target when it's not playing.
-           * The possible values are "none", "forwards", "backwards", "both" or "auto". 
+           * The possible values are "none", "forwards", "backwards", "both" or "auto".
            *
            * "none" means the animation has no effect when it's not playing.
            *
@@ -439,7 +439,8 @@ Elements that are targets to a `core-animation` are given the `core-animation-ta
           if (this.customEffect) {
             effect = this.customEffect;
           } else {
-            effect = new KeyframeEffect(frames, this.composite);
+            // effect = new KeyframeEffect(frames, this.composite);
+            effect = frames;
           }
           return effect;
         },
