@@ -429,7 +429,7 @@ Elements that are targets to a `core-animation` are given the `core-animation-ta
             frames = this.keyframes;
           } else if (!this.customEffect) {
             var children = this.querySelectorAll('core-animation-keyframe');
-            if (children.length === 0) {
+            if (children.length === 0 && this.shadowRoot) {
               children = this.shadowRoot.querySelectorAll('core-animation-keyframe');
             }
             Array.prototype.forEach.call(children, function(c) {
