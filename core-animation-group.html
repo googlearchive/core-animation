@@ -21,9 +21,11 @@ sequential groups play the children one after another.
 Example of an animation group to rotate and then fade an element:
 
     <core-animation-group type="seq">
-      <core-animation id="fadeout" duration="500">
+      <core-animation id="rotate" duration="500">
         <core-animation-keyframe>
           <core-animation-prop name="transform" value="rotate(0deg)"></core-animation-prop>
+        </core-animation-keyframe>
+        <core-animation-keyframe>
           <core-animation-prop name="transform" value="rotate(45deg)"></core-animation-prop>
         </core-animation-keyframe>
       </core-animation>
